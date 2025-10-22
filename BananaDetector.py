@@ -1,3 +1,5 @@
+#Aida Asmardokht
+
 import torch
 import math
 import matplotlib.pyplot as plt
@@ -16,7 +18,7 @@ class BananaNeutrinoCalculator:
         self.K40_half_life = torch.tensor(1.248e9 * 365 * 24 * 3600)  # seconds
 
     def calculate_flux(self, num_bananas, distance, offloading_time=3*24*3600):
-       #""" Calculation of neutrino flux during 3 days of offloading""""
+       # Calculation of neutrino flux during 3 days of offloading
        # Calculation of radioactive activity
        avogadro = 6.022e23
        molar_mass_K = 0.040
@@ -183,4 +185,5 @@ class IBDAnalysis:
 
 
 ibd_analyzer = IBDAnalysis()
+
 ibd_analyzer.analyze_ibd()
